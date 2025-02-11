@@ -3,7 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" href="C:\Users\sadza raisya\Documents\REVOU COURSE\REVOU MINI PROJECT\03-feb-25-sadzapage\asset\Artboard 2.png" />
+    <title>konversi suhu online</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Liter&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
   </head>
-  <body></body>
+
+  <body>
+    <header>Kalkulator Suhu by Sadza</header>
+    <div class="container">
+      <div class="content">
+        <h1>Konversi Suhu</h1>
+        <p>Masukkan suhu derajat Celcius (℃) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (℉).</p>
+        <section class="InputSection">
+          <label for="inputField">Celcius (℃)</label>
+          <br />
+          <input type="text" id="inputField" placeholder="Celcius" />
+          <div class="InputButtonSection">
+            <button id="konversi" type="button" onclick="conversion()">konversi</button>
+            <button id="reverse" type="button" onclick="reverse()">Reverse</button>
+            <button id="reset" type="button" value="reset" onclick="reset()">Reset</button>
+          </div>
+        </section>
+        <section class="OutputSection">
+          <label for="outputField">Fahrenheit (℉)</label>
+          <br />
+          <input type="text" id="outputField" placeholder="Fahrenheit" />
+        </section>
+        <section class="MethodSection">
+          <label for="methodSection">Cara Kalkulasi:</label>
+          <br />
+          <input type="text" id="methodField" placeholder="Rumus" />
+          <br />
+          <span>Celcius ke Fahrenheit</span>
+        </section>
+        <section>
+          <hr />
+          <div>
+            <h3>Cara Konversi Dari Celcius ke Fahrenheit</h3>
+            <div>
+              <p>Suhu dalam derajat Fahrenheit (°F) sama dengan suhu dalam derajat celcius(°C) kali 9/5 tambah 32</p>
+              <p>S(°F) = (S(°C) x 9/5) + 32</p>
+              <p>atau</p>
+              <p>S(°F) = (S(°C) x 1.8) + 32</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="sidebar">
+        <h2>Termometer</h2>
+        <section class="ThermometerSection">
+          <aside>
+            <div class="thermometer">
+              <div class="thermometer-fill" id="celsius-thermometer"></div>
+              <div class="thermometer-label">Celsius</div>
+              <div class="thermometer-value" id="celsius-value">0 °C</div>
+            </div>
+            <div class="thermometer">
+              <div class="thermometer-fill" id="fahrenheit-thermometer"></div>
+              <div class="thermometer-label">Fahrenheit</div>
+              <div class="thermometer-value" id="fahrenheit-value">32 °F</div>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </div>
+    <script src="js\script.js"></script>
+  </body>
 </html>

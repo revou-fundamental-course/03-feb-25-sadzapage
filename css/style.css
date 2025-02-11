@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  background-color: #f2f9ff;
+  font-family: "Liter", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222;
+}
+header {
+  font-family: "Rubik", serif;
+  font-size: larger;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #1f7ccf;
+  padding: 30px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.content {
+  width: 70%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 350px;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.InputSection {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+#inputField {
+  justify-content: center;
+  font-size: large;
+  font-style: italic;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #1f7ccf;
+}
+#konversi {
+  font-size: medium;
+  font-weight: 600;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0px;
+  color: #fff;
+  background-color: #1f7ccf;
+}
+#konversi:hover {
+  background-color: #4d99dd;
+}
+#reverse {
+  font-size: medium;
+  font-weight: 600;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0px;
+  color: #fff;
+  background-color: #1f7ccf;
+}
+#reverse:hover {
+  background-color: #4d99dd;
+}
+#reset {
+  font-size: medium;
+  font-weight: 600;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 0px;
+  color: #fff;
+  background-color: #1f7ccf;
+}
+#reset:hover {
+  background-color: #4d99dd;
+}
+
+.OutputSection {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+#outputField {
+  justify-content: center;
+  font-size: large;
+  font-style: italic;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  outline-color: #75baf6;
+  border-style: solid;
+  border-color: #1f7ccf;
+}
+
+.MethodSection {
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+#methodField {
+  justify-content: center;
+  font-size: large;
+  font-style: italic;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #1f7ccf;
+}
+
+span {
+  font-weight: 200;
+  font-size: small;
+}
+.ThermometerSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+aside {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.thermometer {
+  position: relative;
+  width: 50px;
+  height: 200px;
+  background-color: #65b2f7;
+  border-radius: 25px;
+  margin: 0 10px;
+}
+
+.thermometer-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f7ccf;
+  border-radius: 25px;
+}
+
+.thermometer-label {
+  position: absolute;
+  left: 25px;
+  top: -25px;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: small;
+}
+.thermometer-value {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: small;
+  color: #ffffff;
+}
